@@ -1,0 +1,72 @@
+.ant-modal {
+  box-sizing: border-box !important;
+
+  position: absolute !important;
+  width: 270px !important;
+  height: 650px !important;
+  left: 280px !important;
+  top: 440px !important;
+
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+.ant-modal-content {
+  width: 270px !important;
+  height: 650px;
+}
+.orgLabel,
+.userLabel,
+.emaLabel,
+.datLabel,
+.phoLabel,
+.staLabel {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #545f7d;
+}
+.organization-input {
+  box-sizing: border-box;
+
+  width: 230px;
+  height: 40px;
+
+  background: #ffffff;
+  opacity: 0.2;
+  border: 1px solid #213f7d;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.ant-modal-close {
+  display: none;
+}
+.resFilBnt {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+}
+.resetButton {
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  color: #545f7d;
+  width: 98px;
+height: 40px
+}
+.filterButton {
+  background: #39CDCC;;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  color: #FFFFFF;
+  width: 98px;
+height: 40px
+}
