@@ -1,12 +1,17 @@
+.ant-modal-wrap {
+  overflow: hidden !important;
+  left: 320px !important;
+  top: 80px !important;
+}
 .ant-modal {
   box-sizing: border-box !important;
 
   position: absolute !important;
   width: 270px !important;
-  height: 650px !important;
-  left: 280px !important;
-  top: 440px !important;
-
+  height: 600px !important;
+  // left: 280px !important;
+  // top: 440px !important;
+  overflow: hidden !important;
   background: #ffffff;
   border: 1px solid rgba(84, 95, 125, 0.14);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
@@ -15,6 +20,7 @@
 .ant-modal-content {
   width: 270px !important;
   height: 650px;
+
 }
 .orgLabel,
 .userLabel,
@@ -41,7 +47,7 @@
   border: 1px solid #213f7d;
   border-radius: 8px;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .ant-modal-close {
   display: none;
@@ -59,14 +65,20 @@
   border-radius: 4px;
   color: #545f7d;
   width: 98px;
-height: 40px
+height: 40px;
 }
 .filterButton {
   background: #39CDCC;;
-  border: 1px solid rgba(84, 95, 125, 0.14);
+  // border: 1px solid rgba(84, 95, 125, 0.14);
+  border: none;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
   color: #FFFFFF;
   width: 98px;
 height: 40px
+}
+button {
+  #modal-button {
+    cursor: pointer !important;
+  }
 }

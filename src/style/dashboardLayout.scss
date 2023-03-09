@@ -153,31 +153,43 @@ $ls-black: #000000;
 
   .dashboard-link-item {
       font-size: 14px;
-      padding: 1rem 1.7rem;
+      padding: 10px 27px;
       margin-bottom: .5rem;
       display: flex;
       align-items: center;
+      color: #213f7d !important;
 
       span {
-          color: #7B7B7B;
+        color: #213f7d !important;
           font-size: 12px
       }
 
       p {
-          color: #7B7B7B;
+           color: #213f7d !important;
       }
+
 
       &__active {
           border-left: 5px solid $ls-primary-100;
           background-color: #ebf4f3;
-          padding-left: 1.35rem;
-
+          padding-left: 27px;
+          color: #213f7d !important;
+          background: rgba(57, 205, 204, 0.1);
           p,
           span {
               font-weight: 500;
+              color: #213f7d !important;
           }
       }
   }
+}
+.dashboard-link-item:hover {
+  cursor: pointer !important;
+  color: #213f7d !important;
+  background: rgba(57, 205, 204, 0.1);
+
+  border-left: 5px solid #39cdcc;
+  padding-left: 27px !important;
 }
 
 .menu-links-wrapper {

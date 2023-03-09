@@ -66,9 +66,9 @@ export const Menu: React.FC<IProps> = ({ visible, onClose, currentPath }) => {
           Switch Organization
           <span><SvgIcons.DropDown /></span>
         </div>
-       <div className='dashTitle'><span style={{ marginTop: '2px' }}><SvgIcons.HomeIcon /></span>Dashboard </div>
+       <div className='dashTitle'><span><SvgIcons.HomeIcon /></span>Dashboard </div>
       <div className='customerTitle'>
-        Customers
+        CUSTOMERS
       </div>
       <div className='dashboard-links-container customerActContainer'>
         {links.map(({ link, icon, title }) => (

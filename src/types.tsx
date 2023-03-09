@@ -6,7 +6,8 @@ type userProfile = {
   phoneNumber: string;
   avatar: string;
   gender: string;
-  bvn: string; adress: string;
+  bvn: string; 
+  address: string;
   currency: string;
 }
 

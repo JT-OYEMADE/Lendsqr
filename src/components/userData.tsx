@@ -40,18 +40,18 @@ const userData: React.FC<IUserDetails> = ({
           <div>
             <div className="piHeading">Marital status</div>
             <div className="piDetails">
-
+            {'-'}
             </div>
           </div>
           <div>
             <div className="piHeading">Children</div>
             <div className="piDetails">
-
+            {'-'}
             </div>
           </div>
           <div>
             <div className="piHeading">Type of residence</div>
-            <div className="piDetails">{profile.adress}</div>
+            <div className="piDetails">{profile.address}</div>
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@ const userData: React.FC<IUserDetails> = ({
             </div>
           </div>
           <div>
-            <div className="piHeading">Relationship</div>
+            <div className="piHeading">Gender</div>
             <div>
               <div className="piDetails">{guarantor.gender}</div>
             </div>
@@ -160,7 +160,7 @@ const userData: React.FC<IUserDetails> = ({
           </div>
         </div>
         <div>
-          <div className="piHeading">Relationship</div>
+          <div className="piHeading">Gender</div>
           <div>
             <div className="piDetails">{guarantor.gender}</div>
           </div>
