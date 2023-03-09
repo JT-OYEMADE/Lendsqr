@@ -1,6 +1,7 @@
 import { Modal } from "antd";
 import React, { useState } from "react";
 import "../style/filter.scss";
+import SvgIcons from '../assests/svg/SvgIcons'
 
 const Filter: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,7 +25,7 @@ const Filter: React.FC = () => {
         id="modal-button"
         style={{ fontSize: "12px" }}
       >
-        ORGANIZATION
+        ORGANIZATION &nbsp; <SvgIcons.FilterIcon />
       </button>
       <Modal
         open={isModalOpen}

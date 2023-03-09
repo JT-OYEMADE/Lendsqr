@@ -1,0 +1,189 @@
+$ls-primary-100: #39CDCC;
+$ls-white: #ffffff;
+$ls-black: #000000;
+
+@mixin lgMaxBreakPoint {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+.menu {
+  overflow: auto !important;
+  height: 100vh !important;
+  flex: 0 0 260px !important;
+  max-width: 260px !important;
+  min-width: 260px !important;
+  width: 260px !important;
+  color: $ls-white;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: fixed !important;
+  left: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #ffffff;
+  color: $ls-black;
+}
+
+ .ant-layout-sider {
+  background-color: $ls-white!important;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+
+ }
+
+.dashboard-container {
+  .site-content {
+      margin-top: 88px;
+      background-color: $ls-white;
+      margin-left: 260px;
+      padding: 1rem;
+  }
+}
+
+
+.side-navigation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
+
+  @include lgMaxBreakPoint {
+      height: 80vh
+  }
+}
+
+
+.drawer-menu {
+  z-index: 10;
+  overflow-x: hidden;
+}
+
+.mobile-drawer {
+  .ant-drawer-body {
+      padding: 0;
+  }
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu::-webkit-scrollbar-track {
+  background: none !important;
+}
+
+/* Handle */
+.menu::-webkit-scrollbar-thumb {
+  background: none !important;
+}
+
+/* Handle on hover */
+.menu::-webkit-scrollbar-thumb:hover {
+  background: none !important;
+}
+
+.drawer-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.drawer-menu::-webkit-scrollbar-track {
+  background: none !important;
+}
+
+/* Handle */
+.drawer-menu::-webkit-scrollbar-thumb {
+  background: none !important;
+}
+
+/* Handle on hover */
+.drawer-menu::-webkit-scrollbar-thumb:hover {
+  background: none !important;
+}
+
+@include lgMaxBreakPoint {
+  .dashboard-container {
+      .layout {
+          .mobile-header {
+              visibility: visible !important;
+              display: block !important;
+              background-color: $ls-white;
+              z-index: 99 !important;
+          }
+      }
+
+      .menu {
+          display: none;
+      }
+
+      .site-content {
+          margin-left: 0px;
+      }
+  }
+}
+
+.top-header {
+  background: $ls-white  !important;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  height: 88px !important;
+  width: 100% !important;
+  position: fixed;
+  z-index: 2;
+
+  .top-header-inner {
+      position: relative;
+  }
+
+
+  .mobile-hambugger {
+      display: none;
+      cursor: pointer;
+
+      @include lgMaxBreakPoint {
+          display: block;
+          position: absolute;
+          top: .8rem;
+          right: 2rem;
+      }
+  }
+}
+
+.dashboard-links-container {
+  margin-top: 2.5rem;
+
+  .dashboard-link-item {
+      font-size: 14px;
+      padding: 1rem 1.7rem;
+      margin-bottom: .5rem;
+      display: flex;
+      align-items: center;
+
+      span {
+          color: #7B7B7B;
+          font-size: 12px
+      }
+
+      p {
+          color: #7B7B7B;
+      }
+
+      &__active {
+          border-left: 5px solid $ls-primary-100;
+          background-color: #ebf4f3;
+          padding-left: 1.35rem;
+
+          p,
+          span {
+              font-weight: 500;
+          }
+      }
+  }
+}
+
+.menu-links-wrapper {
+  padding: 8rem 0 0;
+
+  @include lgMaxBreakPoint {
+      padding-top: 3rem
+  }
+}

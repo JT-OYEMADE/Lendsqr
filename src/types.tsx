@@ -48,4 +48,5 @@ export interface IUserDetails {
   socials: userSocials,
   education: userEducation,
   id: string
+  avatar: string
 }

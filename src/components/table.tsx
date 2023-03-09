@@ -16,7 +16,7 @@ const [pageSize, setPageSize] = useState(10)
 const [active, setActive] = useState(1);
   const [columns] = useState([
     {
-      title: [ <span><Filter/><span><SvgIcons.FilterIcon /></span></span>],
+      title: [ <span><Filter/></span>],
       dataIndex: 'orgName'
     },
     {

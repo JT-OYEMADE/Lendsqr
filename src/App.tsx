@@ -1,9 +1,9 @@
-import React from 'react';
+import './style/index.scss'
+import Login from './components/Login';
 import { Dashboard } from './components/dashboard';
 import UserDetailsLayout from './components/userDetailsLayout'
-import Login from './components/Login';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './style/index.scss'
+import { DashboardLayout } from './components/layouts/DashboardLayout';
 
 
 const App = () => {
@@ -11,8 +11,8 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Login />} />
-        <Route path='/users' element={<Dashboard />} />
-        <Route path='/user' element={<UserDetailsLayout />} />
+        <Route path='/users' element={<DashboardLayout><Dashboard /></DashboardLayout>} />
+        <Route path='/user' element={<DashboardLayout><UserDetailsLayout /></DashboardLayout>} />
         <Route path='*' element={<h2>NOT FOUND</h2>} />
       </Routes>
     </BrowserRouter>

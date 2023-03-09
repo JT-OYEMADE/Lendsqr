@@ -1,5 +1,5 @@
 .dash {
-  padding: 0 60px !important;
+  // padding: 0 60px !important;
   // padding-left: 25px;
   // padding-right: 35px;
   margin-top: 40px;
@@ -11,22 +11,23 @@
   font-size: 24px;
   line-height: 28px;
   color: #213f7d;
+  margin-left: 50px;
 }
 .card-main-body {
   display: flex;
   flex-direction: row;
-  gap: 26px;
-  justify-content: center !important;
-  align-content: start !important;
+  gap: 27px;
+  justify-content:center;
+  align-content: center !important;
   margin-top: 40px;
   margin-bottom: 40px;
+  margin-left: -10px;
 }
 .cardContainer {
   background: #ffffff;
-  // border: 1px solid rgba(33, 63, 125, 0.06);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
-  width: 225px;
+  width: 241.5px;
   height: 160px;
   display: flex;
   flex-direction: column;
@@ -63,3 +64,29 @@
 .ant-pagination-options {
   display: none;
 }
+
+
+@media (max-width: 992px) {
+  .dashUser {
+    padding: 0;
+    margin: 0;
+  }
+  .card-main-body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center !important;
+    // margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // margin: 20px;
+  }
+  .cardContainer {
+    width: 400px !important;
+    height: 300px !important;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+

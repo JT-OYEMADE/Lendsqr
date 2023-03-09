@@ -9,8 +9,9 @@ interface IProps  {
   id?: string
   orgName?: string
   accountBalance?: string
+  avatar?: string
 }
-export const Details: React.FC<IProps> = ({firstName, lastName, accountNumber, id, orgName, accountBalance}) => {
+export const Details: React.FC<IProps> = ({firstName, lastName, accountNumber, id, orgName, accountBalance, avatar}) => {
   const [active, setActive] = useState<number>();
   const activeClick = (id: number) => {
     setActive(1);
@@ -20,7 +21,7 @@ export const Details: React.FC<IProps> = ({firstName, lastName, accountNumber, i
     <div className='profileDetail'>
       <div className='profileDash'>
         <div className='nameIcon'>
-          <SvgIcons.AvatarIcon />
+          <img src={avatar} alt="avatar" />
         <div className='profileName'>
           <div>{firstName} {lastName}</div>
           <div>{id}</div>

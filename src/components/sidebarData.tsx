@@ -107,11 +107,16 @@ export const SettingData = [
     icon: <SvgIcons.KarmaIcon/>,
     link: "",
   },
+  {
+    title: "Systems Messages",
+    icon: <SvgIcons.SystemIcon/>,
+    link: "",
+  },
 ]
 export const LogOut = [
   {
     title: "Logout",
     icon: <SvgIcons.LogIcon/>,
-    link: "",
+    link: "/",
   },
 ]

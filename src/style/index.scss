@@ -20,9 +20,12 @@ body {
   // padding-left: 50px;
   padding-right: 60px;
 }
+.ant-layout-header {
+  padding: 0;
+  position: relative;
+}
 .logo2 {
-  justify-content: center;
-  padding-left: 20px;
+  padding: 30px 35px;
 }
 .searchInput {
   .ant-input {
@@ -31,7 +34,6 @@ body {
     border: 1px solid #213f7d;
     border-radius: 8px;
     width: 400px !important;
-    margin-left: -150px;
     ::placeholder {
       font-family: "Work Sans";
       font-style: normal;
@@ -44,9 +46,21 @@ body {
   }
 }
 .ant-input-group-wrapper {
-  position: relative;
-
-  right: 100px;
+  width: 400px !important;
+  position: absolute;
+  left: 320px;
+  top: 30px;
+  // height: 640px;
+}
+.t {
+  position: absolute;
+  right: 70px;
+  top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: center;
+  gap: 40px;
 }
 .ant-btn {
   background: #39cdcc !important;
@@ -121,13 +135,16 @@ body {
   box-sizing: border-box;
 
   position: absolute;
-  width: 1100px;
+  left: 320px;
+  width: 1050px;
   height: 400px;
 
   background: #ffffff;
   border: 1px solid rgba(33, 63, 125, 0.06);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
+  // margin-left: 50px;
+  // margin-right: 50px;
 }
 .ant-table-cell {
   background: #ffffff !important;
@@ -234,3 +251,34 @@ body {
     opacity: 1 !important;
   }
 }
+@media (max-width: 992px) {
+  .logo2 {
+    padding-left: 20px;
+  }
+  .ant-layout-header {
+    .ant-input-group-wrapper {
+      display: none;
+    }
+  }
+  .t {
+    span {
+      display: none;
+    }
+  }
+  
+  .bg-lend {
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    height: 100% !important;
+    width: 1250px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    // padding-left: 50px;
+    padding-right: 60px;
+  }
+  .ant-table-wrapper {
+    display: none;
+  }
+}
+
