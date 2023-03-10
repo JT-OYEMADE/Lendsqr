@@ -19,7 +19,6 @@
   font-size: 16px;
   line-height: 19px;
   cursor: pointer;
-  /* identical to box height */
 
   color: #545f7d;
 }
@@ -292,145 +291,112 @@
 #personalEmail {
   font-size: 15px !important;
 }
-
-@media (max-width: 1200px) {
+@media (min-width: 1201px) and (max-width: 1400px) { 
+  .ant-layout-content {
+    max-width: 1200px !important;
+  }
+  .mainDetailsContainer {
+    margin-left: 50px !important;
+  }
 }
+@media (min-width: 993px) and (max-width: 1400px) {
+  .ant-layout-content {
+    max-width: 1000px;
+  }
+  .mainDetailsContainer {
+    margin-left: 20px;
+    width: 920px;
+  }
+  .userDetailsContainer {
+    padding: 0;
+    margin: 0;
+    width: 850px;
+    justify-content: flex-start;
+  }
+  .profileDetail {
+    width: 850px !important;
+    padding-left: 20px;
+  }
+  .profileTab {
+    justify-content: flex-start !important;
+    padding: 0;
+    width: 830px !important;
+    gap: 10px !important;
+    .general,
+    .document,
+    .bank,
+    .loan,
+    .saving,
+    .appSystem {
+      width: 100px !important;
+      font-size: 12px;
+      
+      
+    }
+  }
+  .generalDetails {
+    // padding-left: 30px;
+    width: 850px !important;
+
+  }
+  .piHeading {
+    font-size: 10px;
+  }
+  .piDetails {
+    font-size: 14px;
+  }
+}
+
+
 
 /* screen-lg */
 @media (max-width: 992px) {
-  #personalInformation {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    justify-content: space-between;
+  .ant-layout-content {
+    max-width: 900px;
   }
-  #employmentEducation {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-    border-bottom: 0.5px solid rgb(229, 224, 224);
+  .mainDetailsContainer {
+    margin-left: 20px;
+    // margin-right: 30px;
+    width: 920px;
   }
-  #socialMedia {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-    border-bottom: 0.5px solid rgb(229, 224, 224);
+  .userDetailsContainer {
+    padding: 0;
+    margin: 0;
+    width: 850px;
+    justify-content: flex-start;
   }
-  #guarantorForm2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
+  .profileDetail {
+    width: 850px !important;
+    padding-left: 20px;
   }
-  #guarantorForm {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
+  .profileTab {
+    // display: none;
+    justify-content: flex-start !important;
+    padding: 0;
+    width: 830px !important;
+    gap: 10px !important;
+    .general,
+    .document,
+    .bank,
+    .loan,
+    .saving,
+    .appSystem {
+      width: 100px !important;
+      font-size: 12px;
+      
+      
+    }
   }
-  .userDetailsList {
-    display: none;
-  }
+  .generalDetails {
+    // padding-left: 30px;
+    width: 850px !important;
 
-  .userDetails {
-    display: inline-block;
   }
-  #userStars {
-    border: none;
-    margin-top: 1rem;
-    margin-left: 6.3rem;
-    width: 0;
+  .piHeading {
+    font-size: 10px;
   }
-  .userAccount-bankDetails {
-    border: none;
-    margin-top: 1rem;
-    margin-left: 6.4rem;
-    width: 0;
+  .piDetails {
+    font-size: 14px;
   }
 }
 
-/* screen-md */
-@media (max-width: 768px) {
-  #personalInformation {
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
-    justify-content: space-between;
-  }
-  #employmentEducation {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-    border-bottom: 0.5px solid rgb(229, 224, 224);
-  }
-  #socialMedia {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-    border-bottom: 0.5px solid rgb(229, 224, 224);
-  }
-  #guarantorForm2 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-  }
-  #guarantorForm {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-  }
-}
-
-/* screen-sm */
-@media (max-width: 576px) {
-  #personalInformation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #personalEmail {
-    font-size: 11px !important;
-  }
-  #employmentEducation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-    border-bottom: 0.5px solid rgb(229, 224, 224);
-  }
-  #socialMedia {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-    border-bottom: 0.5px solid rgb(229, 224, 224);
-  }
-  #guarantorForm2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-  }
-  #guarantorForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0px 30px 0px 30px;
-    border-bottom: 0.5px solid rgb(229, 224, 224);
-  }
-}
