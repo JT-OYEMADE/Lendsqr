@@ -145,6 +145,22 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 450px) {
+  .lendRight {
+    padding-left: 20px !important;
+  }
+
+  .ant-email .ant-input {
+    width: 350px !important;
+  }
+  .ant-password .ant-input-password {
+    width: 350px !important;
+  }
+  .logButton {
+    width: 350px;
+  }
+}
+
 @media (max-width: 600px) {
   .signImage {
     display: none;
@@ -186,6 +202,6 @@
   }
 }
 
-.ant-input-password-icon { 
+.ant-input-password-icon {
   cursor: pointer;
 }
