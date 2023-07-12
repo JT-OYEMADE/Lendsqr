@@ -1,3 +1,7 @@
+Lendsqr = "lendsqr-fe-test-gamma.vercel.app"
+Lendsqr = "https://oluwatomisin-oyemade-lendsqr-fe-test.vercel.app"
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
