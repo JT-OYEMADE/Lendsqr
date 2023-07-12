@@ -1,4 +1,4 @@
-Lendsqr = "lendsqr-fe-test-gamma.vercel.app"
+Lendsqr = "https://lendsqr-fe-test-gamma.vercel.app"
 Lendsqr = "https://oluwatomisin-oyemade-lendsqr-fe-test.vercel.app"
 
 
